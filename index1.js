@@ -23,7 +23,7 @@ let urls = 'http://samples.openweathermap.org/data/2.5/weather?q=${city}&appid=$
 });*/
 
 
-request.get({
+request.post({
 
   url:     urls,
   body:    "mes=heydude"
