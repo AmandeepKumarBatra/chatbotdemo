@@ -23,12 +23,13 @@ let urls = 'http://samples.openweathermap.org/data/2.5/weather?q=${city}&appid=$
 });*/
 
 
-request.post({
+request.get({
 
   url:     urls,
   body:    "mes=heydude"
 }, function(error, response, body){
-  console.log(body);
+	console.log(body);
+  return(JSON.parse(body));
 });
 
 
